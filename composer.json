@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Jar\\Pugtemplate\\": "Classes/",
+            "Jar\\Pugtemplate\\": "Classes/"
         }
     },
     "config": {
