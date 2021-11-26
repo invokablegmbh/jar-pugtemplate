@@ -13,10 +13,6 @@
     "autoload": {
         "psr-4": {
             "Jar\\Pugtemplate\\": "Classes/",
-            "Pug\\": "Classes/Services/",
-            "Phug\\": "Classes/Services/",
-            "JsPhpize\\": "Classes/Services/",
-            "Symfony\\": "Classes/Services/"
         }
     },
     "config": {
