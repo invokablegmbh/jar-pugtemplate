@@ -1,0 +1,30 @@
+{
+    "name": "jar/jar_pugtemplate",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [
+        {
+            "name": "JAR Media GmbH"
+        }
+    ],
+    "require": {
+        "pug-php/pug": "^3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jar\\Pugtemplate\\": "Classes/",
+            "Pug\\": "Classes/Services/",
+            "Phug\\": "Classes/Services/",
+            "JsPhpize\\": "Classes/Services/",
+            "Symfony\\": "Classes/Services/"
+        }
+    },
+    "config": {
+        "vendor-dir": "Classes/Services"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "jar_pugtemplate"
+        }
+    }
+}
