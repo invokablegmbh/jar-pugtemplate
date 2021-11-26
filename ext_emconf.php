@@ -2,7 +2,7 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'Pugtemplate',
-	'description' => 'Rendering von Pugtemplates',
+	'description' => 'Tools for rendering PUG templates in TYPO3',
 	'category' => 'plugin',
 	'author' => '',
 	'author_email' => '',

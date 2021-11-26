@@ -1,7 +1,7 @@
 {
     "name": "jar/jar_pugtemplate",
     "type": "typo3-cms-extension",
-    "description": "",
+    "description": "Tools for rendering PUG templates in TYPO3",
     "authors": [
         {
             "name": "JAR Media GmbH"
