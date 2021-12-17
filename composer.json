@@ -3,10 +3,19 @@
     "type": "typo3-cms-extension",
     "description": "Tools for rendering PUG templates in TYPO3",
     "authors": [
-        {
-            "name": "JAR Media GmbH"
-        }
-    ],
+	    {
+	        "name": "Julian Lichte",
+	        "email": "julian.lichte@invokable.gmbh",
+	        "homepage": "https://invokable.gmbh",
+	        "role": "Developer"
+	    },
+	    {
+	        "name": "Maurice Möllmer",
+	        "email": "maurice.moellmer@invokable.gmbh",
+	        "homepage": "https://invokable.gmbh",
+	        "role": "Developer"
+	    }
+	],
     "require": {
         "pug-php/pug": "^3.4"
     },
