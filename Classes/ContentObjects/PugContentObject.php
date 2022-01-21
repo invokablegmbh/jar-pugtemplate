@@ -14,6 +14,7 @@ use TYPO3\CMS\Frontend\ContentObject\AbstractContentObject;
 use TYPO3\CMS\Frontend\ContentObject\ContentDataProcessor;
 use Jar\Pugtemplate\Services\PugService;
 use Jar\Utilities\Utilities\TypoScriptUtility;
+use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 
 /**
  *
@@ -41,28 +42,17 @@ class PugContentObject extends AbstractContentObject {
      */
     public function render($conf = [])
     {
-    	if(!is_array($conf)) {
-    		return;
-    	}
-    	
-    	if(!empty($conf['templatePath'])) {
-    		$template = $conf['templatePath'];
-    	}
-        
-        $isValue = false;
-        if(isset($conf['template']) && $conf['template'] === 'TEXT') {
-            $template = $conf['template.']['value'] ?? '';
-            $isValue = true;
+        $settings = TypoScriptUtility::populateTypoScriptConfiguration($conf ?? [], $this->cObj);
+
+        $variables = $settings['variables'] ?? [];
+
+        // handle dataprocessors
+        if (!empty($conf['dataProcessing.'])) {
+            $contentDataProcessor = GeneralUtility::makeInstance(ContentDataProcessor::class);
+            $variables = $contentDataProcessor->process($this->cObj, $conf, $variables);
         }
 
-        if(!$template) {
-            return;
-        }
-        
-        unset($conf['dataProcessing.']);
-        $conf = TypoScriptUtility::populateTypoScriptConfiguration($conf ?? []);
-
-    	$content = PugService::compile($template, $conf['variables'] ?? [], $isValue, $conf['debug']);
+    	$content = PugService::compile($settings['templatePath'], $variables, $conf['debug']);
     	$content = $this->applyStandardWrapToRenderedContent($content, $conf);
 
     	return $content;

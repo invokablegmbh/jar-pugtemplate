@@ -16,7 +16,7 @@
         }
     },
     "config": {
-        "vendor-dir": "Classes/Services"
+        "vendor-dir": "Classes/Vendor"
     },
     "extra": {
         "typo3/cms": {
