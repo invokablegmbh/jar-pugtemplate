@@ -14,7 +14,6 @@ use TYPO3\CMS\Frontend\ContentObject\AbstractContentObject;
 use TYPO3\CMS\Frontend\ContentObject\ContentDataProcessor;
 use Jar\Pugtemplate\Services\PugService;
 use Jar\Utilities\Utilities\TypoScriptUtility;
-use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 
 /**
  *
@@ -45,12 +44,16 @@ class PugContentObject extends AbstractContentObject {
         $settings = TypoScriptUtility::populateTypoScriptConfiguration($conf ?? [], $this->cObj);
 
         $variables = $settings['variables'] ?? [];
+        $variables['data'] = $this->cObj->data;
+        $variables['current'] = $this->cObj->data[$this->cObj->currentValKey ?? null] ?? null;
 
         // handle dataprocessors
         if (!empty($conf['dataProcessing.'])) {
             $contentDataProcessor = GeneralUtility::makeInstance(ContentDataProcessor::class);
             $variables = $contentDataProcessor->process($this->cObj, $conf, $variables);
         }
+
+
 
     	$content = PugService::compile($settings['templatePath'], $variables, $conf['debug']);
     	$content = $this->applyStandardWrapToRenderedContent($content, $conf);
