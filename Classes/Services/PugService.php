@@ -33,6 +33,14 @@ class PugService {
 				return '';
 			}
 
+			// Fallback for Quick Debugging
+			$dump = GeneralUtility::_GP('pugdump');
+			if (!empty($dump)) {
+				if ($dump == 1 || strpos($template, $dump) !== false) {
+					$debug = 1;
+				}
+			}
+
 			if($debug) {
 				DebuggerUtility::var_dump($values, $template, 11);
 			}
