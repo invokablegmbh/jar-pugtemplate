@@ -53,8 +53,6 @@ class PugContentObject extends AbstractContentObject {
             $variables = $contentDataProcessor->process($this->cObj, $conf, $variables);
         }
 
-
-
     	$content = PugService::compile($settings['templatePath'], $variables, $conf['debug']);
     	$content = $this->applyStandardWrapToRenderedContent($content, $conf);
 

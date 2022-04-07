@@ -1,0 +1,104 @@
+{
+   "std:confval": {
+      "bootstrapGrid": [
+         "jar_pugtemplate", 
+         "0.0", 
+         "Configuration/BootstrapGrid.html#confval-bootstrapGrid", 
+         "-"
+      ]
+   }, 
+   "std:doc": {
+      "Configuration/BootstrapGrid": [
+         "jar_pugtemplate", 
+         "0.0", 
+         "Configuration/BootstrapGrid.html", 
+         "Include Bootrap Grid"
+      ], 
+      "Configuration/General": [
+         "jar_pugtemplate", 
+         "0.0", 
+         "Configuration/General.html", 
+         "General configuration"
+      ], 
+      "Configuration/Index": [
+         "jar_pugtemplate", 
+         "0.0", 
+         "Configuration/Index.html", 
+         "Configuration"
+      ], 
+      "Example/Index": [
+         "jar_pugtemplate", 
+         "0.0", 
+         "Example/Index.html", 
+         "Example"
+      ], 
+      "Index": [
+         "jar_pugtemplate", 
+         "0.0", 
+         "Index.html", 
+         "JAR Pugtemplate"
+      ], 
+      "Installation/Index": [
+         "jar_pugtemplate", 
+         "0.0", 
+         "Installation/Index.html", 
+         "Installation"
+      ]
+   }, 
+   "std:label": {
+      "configuration": [
+         "jar_pugtemplate", 
+         "0.0", 
+         "Configuration/Index.html#configuration", 
+         "Configuration"
+      ], 
+      "configuration-bootstrapgrid": [
+         "jar_pugtemplate", 
+         "0.0", 
+         "Configuration/BootstrapGrid.html#configuration-bootstrapgrid", 
+         "Include Bootrap Grid"
+      ], 
+      "configuration-general": [
+         "jar_pugtemplate", 
+         "0.0", 
+         "Configuration/General.html#configuration-general", 
+         "General configuration"
+      ], 
+      "example": [
+         "jar_pugtemplate", 
+         "0.0", 
+         "Example/Index.html#example", 
+         "Example"
+      ], 
+      "genindex": [
+         "jar_pugtemplate", 
+         "0.0", 
+         "genindex.html", 
+         "Index"
+      ], 
+      "installation": [
+         "jar_pugtemplate", 
+         "0.0", 
+         "Installation/Index.html#installation", 
+         "Installation"
+      ], 
+      "modindex": [
+         "jar_pugtemplate", 
+         "0.0", 
+         "py-modindex.html", 
+         "Module Index"
+      ], 
+      "search": [
+         "jar_pugtemplate", 
+         "0.0", 
+         "search.html", 
+         "Search Page"
+      ], 
+      "start": [
+         "jar_pugtemplate", 
+         "0.0", 
+         "Index.html#start", 
+         "JAR Pugtemplate"
+      ]
+   }
+}
