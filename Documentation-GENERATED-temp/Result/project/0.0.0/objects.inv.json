@@ -5,6 +5,30 @@
          "0.0", 
          "Configuration/BootstrapGrid.html#confval-bootstrapGrid", 
          "-"
+      ], 
+      "dataProcessing": [
+         "jar_pugtemplate", 
+         "0.0", 
+         "Configuration/General.html#confval-dataProcessing", 
+         "-"
+      ], 
+      "debug": [
+         "jar_pugtemplate", 
+         "0.0", 
+         "Configuration/General.html#confval-debug", 
+         "-"
+      ], 
+      "templatePath": [
+         "jar_pugtemplate", 
+         "0.0", 
+         "Configuration/General.html#confval-templatePath", 
+         "-"
+      ], 
+      "variables": [
+         "jar_pugtemplate", 
+         "0.0", 
+         "Configuration/General.html#confval-variables", 
+         "-"
       ]
    }, 
    "std:doc": {

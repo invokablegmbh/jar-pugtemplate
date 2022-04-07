@@ -95,9 +95,7 @@
                                     <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
                                     <ul>
 <li><a class="reference internal" href="#">General configuration</a><ul>
-<li><a class="reference internal" href="#basic">Basic</a></li>
-<li><a class="reference internal" href="#extended">Extended</a></li>
-<li><a class="reference internal" href="#advanced">Advanced</a></li>
+<li><a class="reference internal" href="#variables">Variables</a></li>
 </ul>
 </li>
 </ul>
@@ -147,48 +145,72 @@
 <div class="line">Download the extension.</div>
 <div class="line">See: <a class="reference internal" href="../Installation/Index.html#installation"><span class="std std-ref">Installation</span></a></div>
 </div>
-<div class="section" id="basic">
-<h2>Basic<a class="headerlink" href="#basic" title="Permalink to this headline">¶</a></h2>
-<div class="line-block">
-<div class="line">Add at least one column via the button <code class="code typoscript docutils literal notranslate"><span class="pre">+Column</span></code>.</div>
-<div class="line">Individual width and an optional css class can be set.</div>
-</div>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">It’s in the responsibility of the editor to choose the width of each column wisely.</p>
-</div>
-<img alt="Configuration/../Images/Configuration/configuration_1.png" src="Configuration/../Images/Configuration/configuration_1.png" />
-</div>
-<div class="section" id="extended">
-<h2>Extended<a class="headerlink" href="#extended" title="Permalink to this headline">¶</a></h2>
-<div class="line-block">
-<div class="line">The extended view can be globally activated for alle columns via the checkbox “Extended column view”.</div>
-<div class="line">For each clumn the width, order (1-9) and offset can be set for 4 breakpoints (mobile, tablet, small- and large desktop)</div>
-<div class="line"><br /></div>
-</div>
-<img alt="Configuration/../Images/Configuration/configuration_2.png" src="Configuration/../Images/Configuration/configuration_2.png" />
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line">Additionally a background color can be set. Either choose a customized hex value or one of the potentially predefined background colors, see <span class="xref std std-ref">configuration-background-colors</span>.</div>
-<div class="line"><br /></div>
-</div>
-<img alt="Configuration/../Images/Configuration/configuration_3.png" src="Configuration/../Images/Configuration/configuration_3.png" />
-</div>
-<div class="section" id="advanced">
-<h2>Advanced<a class="headerlink" href="#advanced" title="Permalink to this headline">¶</a></h2>
-<div class="line-block">
-<div class="line">Under the tab <code class="code typoscript docutils literal notranslate"><span class="pre">Advanced</span> <span class="pre">Settings</span></code> one can configure the content width and background for the whole row.</div>
-<div class="line">There is also the option of giving an additional css class to the row for individual styling.</div>
-<div class="line"><br /></div>
-</div>
-<img alt="Configuration/../Images/Configuration/configuration_4.png" src="Configuration/../Images/Configuration/configuration_4.png" />
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line">For choosing a background there can be chosen a color or a image.</div>
-<div class="line">Both will unlock new fields to set this up.</div>
-<div class="line"><br /></div>
-</div>
-<img alt="Configuration/../Images/Configuration/configuration_5.png" src="Configuration/../Images/Configuration/configuration_5.png" />
+<div class="section" id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
+<dl class="confval">
+<dt id="confval-templatePath">
+<code class="descname">templatePath</code><a class="headerlink" href="#confval-templatePath" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+<p>Path to the pug template on the filesystem.</p>
+</dd></dl>
+
+<dl class="confval">
+<dt id="confval-variables">
+<code class="descname">variables</code><a class="headerlink" href="#confval-variables" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string or cObject</td>
+</tr>
+</tbody>
+</table>
+<p>Variables to pass on to the pug template renderer.</p>
+</dd></dl>
+
+<dl class="confval">
+<dt id="confval-dataProcessing">
+<code class="descname">dataProcessing</code><a class="headerlink" href="#confval-dataProcessing" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">array of class references by full namespace</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">See:</th><td class="field-body"><a class="reference external" href="https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/ContentObjects/Fluidtemplate/DataProcessing.html">DataProcessing documentation</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="confval">
+<dt id="confval-debug">
+<code class="descname">debug</code><a class="headerlink" href="#confval-debug" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 </div>
 </div>
 
@@ -226,7 +248,7 @@
         <div class="frame-container">
             <div class="frame-inner">
                 <div class="footer-additional">
-                    <p class="text-center">Last rendered: Apr 07, 2022 13:09</p>
+                    <p class="text-center">Last rendered: Apr 07, 2022 14:03</p>
                     <p class="text-center">
                         <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow" target="_blank">
                             TYPO3 Theme 4.6.2
