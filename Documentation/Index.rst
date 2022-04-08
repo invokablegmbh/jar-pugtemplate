@@ -28,7 +28,7 @@ JAR Pugtemplate
    typo3pugtemplate@jcdn.de
 
 :License:
-   `GNU General Public License <http://www.gnu.org/copyleft/gpl.html>`_ .
+   `Creative Commons BY 4.0 <https://creativecommons.org/licenses/by/4.0/>`__ .
 
 **TYPO3**
 

@@ -12,12 +12,12 @@ Templatepath is mandatory.
 
 		page.999 = PUGTEMPLATE 
 		page.999 {
-		variables {
-			var1 = TEXT
-			var1.value = 123456789
-			var2 = 123
-		}
-		dataProcessing {
-		}
-		templatePath = fileadmin/test.pug
+			variables {
+				var1 = TEXT
+				var1.value = 123456789
+				var2 = 123
+			}
+			dataProcessing {
+			}
+			templatePath = fileadmin/test.pug
 		}
