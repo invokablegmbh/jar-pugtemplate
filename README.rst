@@ -20,3 +20,5 @@ JAR Pugtemplate
 :Repository: https://github.com/invokablegmbh/jar-pugtemplate
 :Issues: https://github.com/invokablegmbh/jar-pugtemplate/issues
 :Documentation: TBA
+
+Pug Icon by Elena Rimeikaite from the Noun Project.
