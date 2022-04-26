@@ -15,11 +15,8 @@ JAR Pugtemplate
    Julian Lichte, Maurice Möllmer
 
 :Email:
-   typo3pugtemplate@jcdn.de
+   info@invokable.gmbh
 
-:License:
-   `Creative Commons BY 4.0 <https://creativecommons.org/licenses/by/4.0/>`__ .
-
-:Repository: https://git.jar.media/composer-modules/typo3/jar-pugtemplate/
-:Issues: https://git.jar.media/composer-modules/typo3/jar-pugtemplate/-/issues
-:Documentation: https://1067-goldmaster-columnrow.e5j.de/typo3conf/ext/jar_columnrow/Documentation-GENERATED-temp/Result/project/0.0.0/Index.html
+:Repository: https://github.com/invokablegmbh/jar-pugtemplate
+:Issues: https://github.com/invokablegmbh/jar-pugtemplate/issues
+:Documentation: TBA

@@ -1,7 +1,7 @@
 {
     "name": "jar/jar_pugtemplate",
     "type": "typo3-cms-extension",
-    "description": "Tools for rendering PUG templates in TYPO3",
+    "description": "Tools for rendering PUG templates in TYPO3.",
     "authors": [
 	    {
 	        "name": "Julian Lichte",
@@ -17,7 +17,9 @@
 	    }
 	],
     "require": {
-        "pug-php/pug": "^3.4"
+        "pug-php/pug": "^3.4",
+        "jar/jar_utilities": "^v1.0",
+        "typo3/cms-core": "^10.4 || ^11.5"
     },
     "autoload": {
         "psr-4": {
