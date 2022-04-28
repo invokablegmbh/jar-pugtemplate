@@ -2,6 +2,7 @@
     "name": "jar/jar_pugtemplate",
     "type": "typo3-cms-extension",
     "description": "Tools for rendering PUG templates in TYPO3.",
+    "license": "GPL-2.0-or-later",
     "authors": [
 	    {
 	        "name": "Julian Lichte",
