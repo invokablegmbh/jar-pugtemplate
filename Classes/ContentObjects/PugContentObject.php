@@ -18,8 +18,8 @@ use Jar\Utilities\Utilities\TypoScriptUtility;
 /**
  *
  * @author Isaac "DaPedro" Hintenjubel <ih@jcdn.de>
- * @package J77Template
- * @subpackage Services
+ * @package Pugtemplate
+ * @subpackage ContentObjects
  */
 
 class PugContentObject extends AbstractContentObject {

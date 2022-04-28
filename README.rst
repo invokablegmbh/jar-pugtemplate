@@ -19,4 +19,4 @@ PUG Template
 
 :Repository: https://github.com/invokablegmbh/jar-pugtemplate
 :Issues: https://github.com/invokablegmbh/jar-pugtemplate/issues
-:Documentation: TBA
+:Documentation: https://docs.typo3.org/p/jar/jar_pugtemplate/1.0/en-us/

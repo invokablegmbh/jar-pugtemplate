@@ -13,4 +13,4 @@ Install the extension jar_pugtemplate via extension manager or via composer (rec
 
 You can find the current version (and older ones) at
 
-TBA
+	https://extensions.typo3.org/extension/jar_pugtemplate

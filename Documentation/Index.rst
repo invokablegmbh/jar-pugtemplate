@@ -9,7 +9,7 @@
 .. _start:
 
 =============================================================
-JAR Pugtemplate
+JAR PUG Template
 =============================================================
 
 :Version:
@@ -39,7 +39,7 @@ a GNU/GPL CMS/Framework available from `typo3.org <https://typo3.org/>`_ .
 
 This documentation is for the TYPO3 extension JAR Pugtemplate.
 If you find an error or something is missing, please:
-`Report a Problem <https://git.jar.media/composer-modules/typo3/jar-pugtemplate/-/issues/new>`__
+`Report a Problem <https://github.com/invokablegmbh/jar-pugtemplate/issues/new>`__
 
 ..   Note for editors:
 ..   temporarily removed from menu:
