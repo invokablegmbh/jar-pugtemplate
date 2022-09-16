@@ -18,7 +18,7 @@
 	    }
 	],
     "require": {
-        "pug-php/pug": "^3.4",
+        "pug-php/pug": "^3.5",
         "jar/jar_utilities": "^v1.0",
         "typo3/cms-core": "^10.4 || ^11.5"
     },
